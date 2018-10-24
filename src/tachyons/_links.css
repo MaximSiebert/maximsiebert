@@ -1,0 +1,59 @@
+/*
+
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+
+*/
+
+.link {
+    transition: color .15s ease-in;
+    position: relative;
+}
+
+.link:hover, .about .article-link.link:hover {
+    text-decoration: none;
+}
+
+.about .article-link.link {
+    text-decoration: underline;
+}
+
+.article-link h2, .article-link p {
+    transition: color .1s ease-in;
+}
+
+.article-link a {
+    transition: none !important;
+    text-decoration: none;
+}
+
+.article-link {
+    text-decoration: none;
+}
+
+.article-link:hover {
+    color: #fff;
+}
+
+.article-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--black);
+    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+
+.article-link:hover h2, .article-link:hover a, .article-link:hover {
+    color: #fff;
+}
+
+.article-link:hover .lines:before {
+    border-color: #fff;
+}
+
+.article-link:hover:before {
+    width: 100%;
+}
